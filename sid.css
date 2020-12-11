@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background:url(https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav.up
+{  padding-top: 2%;
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    background-color: rgba(218, 134, 78, 0.733);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.sign
+{
+  
+background:transparent;
+outline:none;
+
+margin-bottom: 2%;
+text-align: center;
+padding-top: 1%;
+
+}
+div.sign{
+ 
+  width: 10%;
+    box-shadow: 3px 7px 7px 5px #ffffff;
+  border-radius:5px;
+  margin-right: 2%;
+}
+div.sign a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+                                           
+
+.side{
+    margin: 0% 2% 6% 3%;
+}
+input[type='checkbox']{
+ border:2px solid red;
+
+}
+
+.techname{
+   display: flex;
+   color:#390bb8;
+   font-family: 'Dancing Script', cursive;
+   font-weight: bolder;
+   letter-spacing: 3px;
+   font-size:250%;
+   text-shadow: 2px 2px 5px #000000;
+   margin-left:4%;
+   margin-bottom:2%;
+   float: left;
+}
+                                                      /* below this is side bar coding */
+
+.sidebar
+{   position: fixed;
+    width:30%;
+    height:90%;
+    background-color:  rgba(218, 134, 78, 0.733);
+    left:0px;
+   
+   transition:1s ;
+   transition-property: left;
+   box-shadow: 2px 2px 5px 5px #ffffff;
+}
+.icon
+{
+    margin-right: 10%;
+}
+.fa {
+    color: white;
+}
+div.show
+{  
+    display: flex;
+    flex-direction: column;
+float: left;
+padding-top: 18%;
+
+
+background-color:   rgba(218, 134, 78, 0.733);
+box-shadow: 2px 2px 5px 5px #ffffff;
+height: 100%;
+display: none;
+
+
+
+
+
+}
+.shift{
+    margin:5% 5% 16% 1%;
+}
+.image{
+    margin-top: 1%;
+    margin-left:5%; 
+    width: 78%;
+    height: 40%;
+    background-color: white;
+    box-shadow: -2px 2px 5px 5px #ffffff;
+}
+.innerimage
+{  
+   
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1513618364580-fe1596762e8e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdHVyYW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.cont{ 
+     margin: 4% 2% 0% 3%;
+     box-shadow: -2px 2px 5px 5px #ffffff;
+     width:80%;
+     height: fit-content;
+     padding: 4%;
+     background-color: rgb(21, 51, 53);
+     transition-property:width,background;
+     transition-property: color;
+     transition-delay: 0.5s;
+}
+.trans{
+     list-style: none;
+     text-decoration: none;
+     color: #ffffff;
+     text-align: center;
+     transition-property:background;
+}
+
+.cont:hover{
+  color:#690009  
+}
+.cont:hover{
+    width: 84%;
+    height: large;
+    background-color:rgba(101, 226, 29, 0.9);
+}
+#check{
+    display: none;
+}
+
+label
+{
+    margin-left: 2%;
+}
+#check:checked ~ .sidebar{
+   
+ left:-33%
+
+}
+#check:checked ~ div.show {
+display: flex;
+flex-direction: column;
+
+          
+}
+#check:checked ~  .show a{
+    margin-bottom: 20%;
+    }
+@media (max-width:860px)
+{
+  .sidebar{
+            width: 80%;
+          }
+
+          #check:checked ~ .sidebar{
+   
+            left:-81%
+           
+      
+
+
+}
+
