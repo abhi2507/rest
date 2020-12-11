@@ -91,7 +91,7 @@ div.show
     display: flex;
     flex-direction: column;
 float: left;
-padding-top: 18%;
+padding-top: 8%;
 
 
 background-color:   rgba(218, 134, 78, 0.733);
@@ -105,7 +105,7 @@ display: none;
 
 }
 .shift{
-    margin:5% 5% 16% 1%;
+    margin:5% 5% 150% 1%;
 }
 .image{
     margin-top: 1%;
